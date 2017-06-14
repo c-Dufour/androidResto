@@ -34,6 +34,7 @@ public class ListingActivity extends AppCompatActivity {
                 restaurantList.add(new Restaurant("Flunch","Restaurant","04 05 07 08 06","cavaFluncher.com","cavafluncher.com","https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_Restaurant_Flunch.jpg"));
                 restaurantList.add(new Restaurant("Eat Sushis","Sushiiis","09 99 99 99","chouchis@dsds.com","eatsushis.com","http://cdn.ou-dejeuner.com/establishment/logo/original/eat-sushi_55310.jpg"));
                 //listViewData.setAdapter(new ArrayAdapter<Restaurant>(ListingActivity.this,R.layout.item_restaurent,restaurantList));
+                listViewData.setAdapter(new RestaurantAdapter(ListingActivity.this,R.layout.item_restaurent,restaurantList));
             }else{
                 textViewTitle.setText("Les Hôtels");
             }
