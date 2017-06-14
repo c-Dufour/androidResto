@@ -27,30 +27,33 @@
             android:layout_alignParentTop="true"
             app:srcCompat="@drawable/accueil1" />
         <Button
+            style="@style/ReserverText"
+            android:textSize="14sp"
             android:id="@+id/button"
+            android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Button"
+            android:text="@string/home_button"
             android:background="@drawable/accueil2"/>
 
     </LinearLayout>
 
     <Button
         style="@style/ReserverText"
-        android:id="@+id/button2"
+        android:id="@+id/buttonResto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.42"
-        android:text="Réserver\nun restaurant"
+        android:text="@string/home_resto"
         android:background="@drawable/accueil3" />
 
     <Button
         style="@style/ReserverText"
-        android:id="@+id/button3"
+        android:id="@+id/buttonHotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.30"
-        android:text="Réserver\nun hotel"
+        android:text="@string/home_hotel"
 
         android:background="@drawable/accueil4"/>
 
